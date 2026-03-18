@@ -64,14 +64,6 @@ nav {
   margin-bottom: 10px;
 }
 
-.smart {
-  background: white;
-  padding: 4px;
-  border-radius: 6px;
-  height: 35px;
-  width: auto;
-}
-
 .hero p {
   color: #aaa;
   max-width: 700px;
@@ -91,7 +83,6 @@ nav {
   transition: 0.3s;
 }
 
-/* Fix GitHub for dark mode */
 .github {
   filter: invert(1);
 }
@@ -112,15 +103,21 @@ h2 {
 
 /* SKILLS */
 .skills {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
 }
 
 .skill {
-  border: 1px solid #444;
-  padding: 8px 14px;
-  font-size: 0.9rem;
+  border: 1px solid #333;
+  padding: 18px;
+  border-radius: 8px;
+  transition: 0.3s;
+  line-height: 1.6;
+}
+
+.skill:hover {
+  border-color: #fff;
 }
 
 /* PROJECTS */
@@ -203,10 +200,7 @@ footer {
     </a>
 
     <a href="https://smartinterviews.in/profile/SrishanthReddy04" target="_blank">
-        <div>
-            SmartInterviews
-            <!-- <img class="smart" src="SILogo.png" alt="Smart Interviews"> -->
-        </div>
+      <span style="border:1px solid #444; padding:6px 10px; font-size:12px;">SmartInterviews</span>
     </a>
 
   </div>
@@ -224,19 +218,39 @@ footer {
 <!-- SKILLS -->
 <section id="skills">
   <h2>Skills</h2>
+
   <div class="skills">
-    <div class="skill">Python</div>
-    <div class="skill">Java</div>
-    <div class="skill">C</div>
-    <div class="skill">JavaScript</div>
-    <div class="skill">TypeScript</div>
-    <div class="skill">React</div>
-    <div class="skill">Node.js</div>
-    <div class="skill">Express</div>
-    <div class="skill">Django</div>
-    <div class="skill">PostgreSQL</div>
-    <div class="skill">MongoDB</div>
-    <div class="skill">Prisma</div>
+
+    <div class="skill">
+      <strong>Languages:</strong><br>
+      Python, C, Java, JavaScript, TypeScript, Kotlin
+    </div>
+
+    <div class="skill">
+      <strong>Frontend:</strong><br>
+      React (JSX), Tailwind CSS, Bootstrap, Vite
+    </div>
+
+    <div class="skill">
+      <strong>Backend:</strong><br>
+      Node.js, Express.js, REST APIs, Django
+    </div>
+
+    <div class="skill">
+      <strong>Databases:</strong><br>
+      PostgreSQL, MySQL, SQLite, Supabase, Oracle, AWS
+    </div>
+
+    <div class="skill">
+      <strong>ML & Data Science:</strong><br>
+      NumPy, Pandas, Matplotlib
+    </div>
+
+    <div class="skill">
+      <strong>Tools & DevOps:</strong><br>
+      Docker, Linux, Git, GitHub, Vercel, Render, VS Code
+    </div>
+
   </div>
 </section>
 
