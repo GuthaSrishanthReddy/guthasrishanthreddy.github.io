@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Srishanth Reddy | Portfolio</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #000;
+  color: #fff;
+}
+
+/* NAVBAR */
+header {
+  border-bottom: 1px solid #222;
+  position: sticky;
+  top: 0;
+  background: #000;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 8%;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.nav-links {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+}
+
+.nav-links a {
+  color: #aaa;
+  text-decoration: none;
+}
+
+.nav-links a:hover {
+  color: #fff;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.smart {
+  background: white;
+  padding: 4px;
+  border-radius: 6px;
+  height: 35px;
+  width: auto;
+}
+
+.hero p {
+  color: #aaa;
+  max-width: 700px;
+  margin: auto;
+}
+
+/* SOCIAL ICONS */
+.socials {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.socials img {
+  width: 35px;
+  transition: 0.3s;
+}
+
+/* Fix GitHub for dark mode */
+.github {
+  filter: invert(1);
+}
+
+.socials img:hover {
+  transform: scale(1.2);
+}
+
+/* SECTION */
+section {
+  padding: 70px 8%;
+  border-bottom: 1px solid #111;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+/* SKILLS */
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill {
+  border: 1px solid #444;
+  padding: 8px 14px;
+  font-size: 0.9rem;
+}
+
+/* PROJECTS */
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.project {
+  border: 1px solid #333;
+  padding: 20px;
+  transition: 0.3s;
+}
+
+.project:hover {
+  border-color: #fff;
+}
+
+.project a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* CONTACT */
+.contact a {
+  display: inline-block;
+  margin: 10px 15px 0 0;
+  color: #aaa;
+}
+
+.contact a:hover {
+  color: #fff;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #555;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+  <nav>
+    <div class="logo">Srishanth</div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <h1>Gutha Srishanth Reddy</h1>
+  <p>
+    Full Stack Developer & AI Enthusiast building scalable systems,
+    APIs, and intelligent applications.
+  </p>
+
+  <div class="socials">
+    
+    <a href="https://www.linkedin.com/in/srishanth-reddy-b82817331/" target="_blank">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg">
+    </a>
+
+    <a href="https://github.com/guthasrishanthreddy" target="_blank">
+      <img class="github" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg">
+    </a>
+
+    <a href="https://leetcode.com/u/srishanth_4125/" target="_blank">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/LeetCode_logo_black.png">
+    </a>
+
+    <a href="https://smartinterviews.in/profile/SrishanthReddy04" target="_blank">
+        <div>
+            <img class="smart" src="SILogo.png" alt="Smart Interviews">
+        </div>
+    </a>
+
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <h2>About</h2>
+  <p>
+    Computer Science student with strong experience in full-stack and AI-based systems.
+    I build scalable applications, REST APIs, and recommendation systems using modern technologies.
+  </p>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="skills">
+    <div class="skill">Python</div>
+    <div class="skill">Java</div>
+    <div class="skill">C</div>
+    <div class="skill">JavaScript</div>
+    <div class="skill">TypeScript</div>
+    <div class="skill">React</div>
+    <div class="skill">Node.js</div>
+    <div class="skill">Express</div>
+    <div class="skill">Django</div>
+    <div class="skill">PostgreSQL</div>
+    <div class="skill">MongoDB</div>
+    <div class="skill">Prisma</div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <h2>Projects</h2>
+
+  <div class="projects">
+
+    <div class="project">
+      <h3>LeetCode Stalker</h3>
+      <p>Track and analyze coding progress.</p>
+      <a href="https://github.com/GuthaSrishanthReddy/leetcode-stalker" target="_blank">View Project</a>
+    </div>
+
+    <div class="project">
+      <h3>Fitness Tracker (AI)</h3>
+      <p>AI-powered workout & nutrition platform.</p>
+      <a href="https://github.com/guthasrishanthreddy/fitness-tracker" target="_blank">View Project</a>
+    </div>
+
+    <div class="project">
+      <h3>Project Portfolio</h3>
+      <p>Showcase platform for student projects.</p>
+      <a href="https://github.com/sreeshanth-soma/Project-Portfolio" target="_blank">View Project</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- CERTIFICATION -->
+<section>
+  <h2>Certification</h2>
+  <p>
+    <a href="https://www.linkedin.com/learning/certificates/a1380798cc336c42680daf6ec576965da4dc81c043e65e448b1dc7641c1e21dd" target="_blank">
+      Career Essentials in Generative AI (Microsoft & LinkedIn)
+    </a>
+  </p>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+  <h2>Contact</h2>
+  <p>Email: srishanthreddygutha@gmail.com</p>
+  <p>Phone: +91 8328205363</p>
+</section>
+
+<footer>
+  © 2026 Srishanth Reddy
+</footer>
+
+</body>
+</html>
